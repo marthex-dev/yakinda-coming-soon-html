@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a1f35 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    padding: 4rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon-container i {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+@keyframes progress {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 2.5rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+    
+    .icon-container i {
+        font-size: 2.5rem;
+    }
+}
+
+/* Hover efektleri */
+.content:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.icon-container i:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.logo {
+    width: 64px;
+    height: auto;
+    margin: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #00f2fe, #4facfe);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.github-btn i {
+    font-size: 1.4rem;
+}
+
+.github-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0, 242, 254, 0.2);
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.github-btn:active {
+    transform: translateY(0);
+}
+
+.github-desc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+} 
